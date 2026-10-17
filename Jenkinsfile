@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('1. Setup Environment') {
             steps {
-                echo 'Préparation de l'environnement Python...'
+                echo "Préparation de l'environnement Python..."
                 sh 'python3 -m venv venv'
                 sh './venv/bin/pip install --upgrade pip'
                 sh './venv/bin/pip install -r requirements.txt'
